@@ -1,4 +1,5 @@
-resource "aws_s3_bucket" "mytestbucket" {
-  bucket = "jkadkasj8280ajajqs"
-  acl    = "private"
+resource "aws_ssm_parameter" "foo" {
+  name  = "mykeyname"
+  type  = "String"
+  value = "myvalue"
 }
